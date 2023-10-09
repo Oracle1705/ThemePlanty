@@ -15,16 +15,6 @@ Updated: 2023-07-30 13:10:01
 body {
   background-color: #ece2da;
 }
-/*****HEADER*****/
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  height: 70px;
-  font-family: "Syne", sans-serif;
-  background-color: white;
-}
 
 ol,
 ul {
@@ -36,9 +26,14 @@ a {
   color: black;
 }
 
-li #menu-item-334 {
-  flex: auto;
-  margin-left: 30px;
+/*****HEADER FOR USER LOGGED*****/
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 70px;
+  font-family: "Syne", sans-serif;
+  background-color: white;
 }
 
 #menu-item-97 {
@@ -58,12 +53,44 @@ li #menu-item-334 {
   flex: auto;
   margin-left: 30px;
 }
+
+/***HEADER FOR USER NOT LOGGED****/
+
+#menu-navig-without-admin.menu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 70px;
+  font-family: "Syne", sans-serif;
+  background-color: white;
+}
+
+#menu-item-466 {
+  height: 70px;
+  width: 201px;
+  background-color: #dc9f96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-item-466 a {
+  color: white;
+}
+
+#menu-item-465 {
+  flex: auto;
+  margin-left: 30px;
+}
+
 /*******BODY*******/
 
 .premium-cf7-container .wpcf7-form {
   flex-direction: column;
   align-items: center;
 }
+
+/*** 
 
 /*******FOOTER******/
 .menu-class-footer {
