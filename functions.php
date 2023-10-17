@@ -20,12 +20,11 @@ function my_wp_nav_menu_args($args = '')
     if (is_user_logged_in()) {
         // Logged in menu to display
         $args['header'] = 8;
-        $args['footer'] = 9;
     } else {
         // Non-logged-in menu to display
-        $args['header'] = 25;
-        $args['footer'] = 9;
+        $args['menu'] = 25;
     }
     return $args;
 }
+
 add_filter('wp_nav_menu_args', 'my_wp_nav_menu_args');
